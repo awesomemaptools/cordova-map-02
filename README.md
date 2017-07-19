@@ -18,7 +18,7 @@ Suggested: Change `app.js` to ie `app.singleton.js`.
 
 Install gulp globally, then run dev environment in browser with gulp:
 ```bash
-git checkout mapbox-gl
+sudo npm install -g gulp-cli # If you don't have it already
 npm install
 gulp
 ```
