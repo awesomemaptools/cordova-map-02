@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.awesomemap.tools.crdvoff" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>Cordova Map App 01</name>
+    <description>
+        First attempt with mobile GIS functionality.
+    </description>
+    <author email="jonas@awesomemap.tools" href="http://awesomemap.tools/">
+        awesome map tools
+    </author>
+    <content src="index.html" />
+    <plugin name="cordova-plugin-whitelist" spec="1" />
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <!-- <hook type="before_build" src="scripts/gulp_prod.sh" /> -->
+    <!-- <hook type="before_run" src="scripts/gulp_prod.sh" /> -->
+    <!-- <hook type="before_emulate" src="scripts/gulp_prod.sh" /> -->
+    <hook type="before_prepare" src="scripts/gulp_prod.sh" />
+    <platform name="android">
+        <allow-intent href="market:*" />
+        <preference name="CrosswalkAnimatable" value="true" />
+    </platform>
+    <platform name="ios">
+        <allow-intent href="itms:*" />
+        <allow-intent href="itms-apps:*" />
+    </platform>
+    <preference name="DisallowOverscroll" value="true" />
+</widget>

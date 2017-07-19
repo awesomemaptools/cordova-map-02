@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>Plain Leaflet API</title>
+<meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+<script src='https://api.mapbox.com/mapbox.js/v3.0.1/mapbox.js'></script>
+<link href='https://api.mapbox.com/mapbox.js/v3.0.1/mapbox.css' rel='stylesheet' />
+<style>
+  body { margin:0; padding:0; }
+  #map { position:absolute; top:0; bottom:0; width:100%; }
+</style>
+</head>
+<body>
+
+
+<div id='map'></div>
+
+<script>
+L.mapbox.accessToken = 'pk.eyJ1IjoiZWxsdnRyemVnIiwiYSI6ImNpejl4M2M0NDAxbWoycXRlanZnc283dnYifQ.sPFCSTsdlCOp1hk6afDvJg';
+// Replace 'mapbox.streets' with your map id.
+// mapbox://styles/mapbox/outdoors-v10
+
+var map = L.map('map')
+    // .addLayer(mapboxTiles)
+    // .setView([62.21062, 6.51009], 12);
+    .fitWorld();
+
+// var mapboxTiles = L.tileLayer('https://api.mapbox.com/v4/mapbox.outdoors/{z}/{x}/{y}.png?access_token=' + L.mapbox.accessToken, {
+//     attribution: '© <a href="https://www.mapbox.com/map-feedback/">Mapbox</a> © <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+// }).addTo(map);
+map.setView([62.21062, 6.51009], 12);
+
+var out = L.mapbox.tileLayer('mapbox.outdoors')
+// var streets = L.mapbox.tileLayer('mapbox.streets')
+  .addTo(map);
+// map.setView([62.47126, 6.16342], 12); // Aalesund sentrum
+map.setView([62.21062, 6.51009], 12); // Hjoringfjord
+
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+{
+  "extends": "standard",
+  "plugins": [
+    "html"
+  ],
+  "env": {
+    "jasmine": true
+  },
+  "rules": {
+  	"comma-style": 0,
+  	"comma-spacing": 0,
+  	"semi": [2, "always"],
+  	"quotes": 0,
+  	"indent": 0,
+  	"space-before-function-paren": 0,
+  	"space-before-blocks": 0,
+  	"no-trailing-spaces": [0, "skipBlankLines": true],
+  	"space-infix-ops": 0,
+  	"operator-linebreak": 0,
+  	"no-multi-spaces": 0,
+  	"space-in-parens": 0,
+  	"keyword-spacing": 0,
+  	"block-spacing": 1,
+  	"arrow-spacing": 0,
+  	"one-var": 0,
+  	"no-eval": 1,
+  	"no-mixed-spaces-and-tabs": 1,
+  	"eol-last": 1,
+  	"key-spacing": 0,
+  	"curly": 1,
+  	"spaced-comment": 0,
+  	"no-multiple-empty-lines": 1,
+  	"object-curly-spacing": 0,
+  	"standard/object-curly-even-spacing": 0,
+  	"semi-spacing": 0,
+    "no-new": 0,
+    "padded-blocks": 0,
+    "brace-style": 0,
+    "camelcase": 0
+  }
+}

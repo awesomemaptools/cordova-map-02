@@ -1,0 +1,7 @@
+commit.txt
+node_modules
+platforms
+plugins
+gulp.log
+www/js/build.js
+www/vendor
